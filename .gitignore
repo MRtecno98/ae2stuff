@@ -10,3 +10,7 @@
 /*.iml
 /*.ipr
 /.idea/libraries/Gradle__*
+/.project
+/.settings/org.eclipse.buildship.core.prefs
+/.classpath
+/.settings/
