@@ -60,21 +60,20 @@ minecraft {
 
 repositories {
     mavenCentral()
+    
     maven {
         name = "bdew"
         url = "https://jenkins.bdew.net/maven"
     }
+
     maven {
         name "JEI"
         url "http://dvs1.progwml6.com/files/maven"
     }
+
     maven {
-        name "HWYLA"
-        url "http://tehnut.info/maven"
-    }
-    ivy {
-        name "AE2"
-        artifactPattern "http://addons-origin.cursecdn.com/files/${config.ae2.cf}/[module]-[revision](-[classifier])(.[ext])"
+        name "tecno-repo"
+        url "https://repo.mrtecno.tk/repository/public-maven/"
     }
 }
 
@@ -84,7 +83,7 @@ dependencies {
     deobfCompile "mezz.jei:jei_${config.minecraft.version}:${config.jei.version}"
     deobfCompile "mcp.mobius.waila:Hwyla:${config.hwyla.version}"
 
-    deobfCompile ":appliedenergistics2:${config.ae2.version}@jar"
+    deobfCompile "appeng:appliedenergistics2:${config.ae2.version}@jar"
 
 }
 
